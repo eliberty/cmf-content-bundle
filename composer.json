@@ -1,5 +1,5 @@
 {
-    "name": "symfony-cmf/content-bundle",
+    "name": "eliberty/cmf-content-bundle",
     "type": "symfony-bundle",
     "description": "Symfony CMF Content Bundle",
     "keywords": [
@@ -13,15 +13,21 @@
             "homepage": "https://github.com/symfony-cmf/ContentBundle/contributors"
         }
     ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://e-liberty.repo.repman.rpstack.com"
+        }
+    ],
     "require": {
-        "php": "^7.1",
-        "symfony/framework-bundle": "^2.8 || ^3.3 || ^4.0",
-        "symfony/templating": "^2.8 || ^3.3 || ^4.0",
-        "symfony/twig-bundle": "^2.8 || ^3.3 || ^4.0",
-        "symfony/validator": "^2.8 || ^3.3 || ^4.0",
-        "symfony-cmf/core-bundle": "^2.1",
-        "symfony-cmf/menu-bundle": "^2.1",
-        "symfony-cmf/routing-bundle": "^2.1"
+        "php": "^7.4|^8.0",
+        "symfony/framework-bundle": "^3.3 || ^4.0",
+        "symfony/templating": "^3.3 || ^4.0",
+        "symfony/twig-bundle": "^3.3 || ^4.0",
+        "symfony/validator": "^3.3 || ^4.0",
+        "eliberty/cmf-core-bundle": "^2.1",
+        "eliberty/cmf-menu-bundle": "^2.1",
+        "eliberty/cmf-routing-bundle": "^2.1"
     },
     "require-dev": {
         "doctrine/phpcr-odm": "^1.4|^2.0",
