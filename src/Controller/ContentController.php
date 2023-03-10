@@ -99,7 +99,7 @@ class ContentController
     protected function renderResponse($contentTemplate, $params)
     {
         if ($this->viewHandler) {
-            if (1 === count($params)) {
+            if (1 === (is_countable($params) ? count($params) : 0)) {
                 $templateVar = key($params);
                 $params = reset($params);
             }

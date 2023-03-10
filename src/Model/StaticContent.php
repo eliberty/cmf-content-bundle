@@ -225,7 +225,7 @@ class StaticContent extends StaticContentBase implements
      */
     public function getExtra($name, $default = null)
     {
-        return isset($this->extras[$name]) ? $this->extras[$name] : $default;
+        return $this->extras[$name] ?? $default;
     }
 
     /**

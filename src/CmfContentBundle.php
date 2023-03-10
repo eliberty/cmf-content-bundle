@@ -22,7 +22,7 @@ class CmfContentBundle extends Bundle
     {
         $container->addCompilerPass(new ValidationPass());
 
-        if (class_exists('Doctrine\Bundle\PHPCRBundle\DependencyInjection\Compiler\DoctrinePhpcrMappingsPass')) {
+        if (class_exists(\Doctrine\Bundle\PHPCRBundle\DependencyInjection\Compiler\DoctrinePhpcrMappingsPass::class)) {
             $container->addCompilerPass(
                 DoctrinePhpcrMappingsPass::createXmlMappingDriver(
                     [
